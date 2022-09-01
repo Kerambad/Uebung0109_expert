@@ -17,22 +17,20 @@ public class MainTest {
     void sortTest() {
         //given
         int[] array = {4,3,2,1};
-        int[] solut = {1,2,3,4};
         //when
         int[] actual = Main.sort(array);
         //then
-        assertArrayEquals(actual, solut);
+        assertArrayEquals(actual,new int[]{1,2,3,4});
     }
     @Test
     void toarrayTest() {
         //given
         String test = "hallo";
-        char[] solut = {'h', 'a', 'l', 'l', 'o'};
         //when
         char[] actual = Main.toarray(test);
         //then
-        assertArrayEquals(actual, solut);
-        //TODO: change equalation method
+        assertArrayEquals(actual, new char[] {'h', 'a', 'l', 'l', 'o'});
+
     }
     @Test
     void quersummeTest() {
@@ -43,4 +41,6 @@ public class MainTest {
         //then
         assertEquals(12,actual);
     }
+
+
 }
