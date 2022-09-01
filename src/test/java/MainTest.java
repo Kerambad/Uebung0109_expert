@@ -41,6 +41,6 @@ public class MainTest {
         //when
         int actual = Main.quersumme(number);
         //then
-        assertEquals(9,actual);
+        assertEquals(12,actual);
     }
 }
